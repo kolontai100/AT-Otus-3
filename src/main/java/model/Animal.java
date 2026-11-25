@@ -1,4 +1,6 @@
-public class Animal {
+package model;
+
+public abstract class Animal {
 
     private int id;     // номер записи в базе
     private String name;
@@ -55,9 +57,7 @@ public class Animal {
         this.type = type;
     }
 
-    public void say() {
-        System.out.println("Я говорю");
-    }
+    public abstract void say();
 
     public void go() {
         System.out.println("Я иду");
